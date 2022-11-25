@@ -2,6 +2,8 @@ package com.example;
 
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+
 public class Cat {
 
     Predator predator;
@@ -19,3 +21,6 @@ public class Cat {
     }
 
 }
+
+
+
