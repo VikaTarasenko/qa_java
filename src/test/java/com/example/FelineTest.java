@@ -13,7 +13,7 @@ import java.util.Objects;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.when;
 
-@RunWith(MockitoJUnitRunner.class)
+@RunWith(MockitoJUnitRunner.class) //
 public class FelineTest {
     @Mock
     Feline feline;
@@ -25,9 +25,8 @@ public class FelineTest {
         assertEquals(List.of("проверка1", "проверка2"), cat.getFood());
        /*Feline feline = new Feline();
         List<String> food = List.of("Животные", "Птицы", "Рыба");
-        //feline.getFood("Хищник"); // вызвали метод объекта с аргументом
         Assert.assertTrue(Objects.equals(feline.eatMeat(), food));
-      //  Mockito.verify(feline).getFood("Хищник");*/
+      */
     }
 
    @Test

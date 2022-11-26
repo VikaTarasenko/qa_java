@@ -14,7 +14,7 @@ import java.util.Objects;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.when;
 
-@RunWith(MockitoJUnitRunner.class)
+@RunWith(MockitoJUnitRunner.class)//
 public class CatTest {
     @Mock
     Feline feline;
@@ -30,8 +30,7 @@ public class CatTest {
        when(feline.eatMeat()).thenReturn(List.of("проверка1", "проверка2"));
        var cat = new Cat(feline);
        assertEquals(List.of("проверка1", "проверка2"), cat.getFood());
-       /*List<String> food = List.of("Животные", "Птицы", "Рыба");
-       Assert.assertTrue(Objects.equals(feline.eatMeat(), food));*/
+
    }
 
     }

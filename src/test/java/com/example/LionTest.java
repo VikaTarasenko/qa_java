@@ -9,7 +9,7 @@ import org.mockito.MockitoAnnotations;
 
 import static org.junit.Assert.assertEquals;
 
-@RunWith(Parameterized.class)
+@RunWith(Parameterized.class) //
 public class LionTest {
 
     private final String sex;
