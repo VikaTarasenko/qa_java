@@ -17,7 +17,6 @@ import static org.mockito.Mockito.when;
 public class FelineTest {
     @Mock
     Feline feline;
-
     @Test
     public void eatMeat() throws Exception {
         when(feline.eatMeat()).thenReturn(List.of("проверка1", "проверка2"));
@@ -28,7 +27,6 @@ public class FelineTest {
         Assert.assertTrue(Objects.equals(feline.eatMeat(), food));
       */
     }
-
    @Test
     public void getFamily() {
        Mockito.when(feline.getFamily()).thenReturn("Кошачьи");

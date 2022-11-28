@@ -18,13 +18,11 @@ import static org.mockito.Mockito.when;
 public class CatTest {
     @Mock
     Feline feline;
-
     @Test
     public void getSound() {
         var cat = new Cat(new Feline());
         assertEquals("Мяу", cat.getSound());
     }
-
    @Test
     public void getFood() throws Exception {
        when(feline.eatMeat()).thenReturn(List.of("проверка1", "проверка2"));
