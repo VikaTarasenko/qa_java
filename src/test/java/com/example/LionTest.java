@@ -9,9 +9,8 @@ import org.mockito.MockitoAnnotations;
 
 import static org.junit.Assert.assertEquals;
 
-@RunWith(Parameterized.class)
+@RunWith(Parameterized.class) //
 public class LionTest {
-
     private final String sex;
     private final boolean expectedResult;
    @Mock
@@ -20,7 +19,6 @@ public class LionTest {
     public void setUp(){
         MockitoAnnotations.openMocks(this);
     }
-
     public LionTest(String sex, boolean expectedResult) { //создаем конструктор класса, который принимает параметры из Object
         this.sex = sex;
         this.expectedResult = expectedResult;
@@ -40,6 +38,5 @@ public class LionTest {
         lion = new Lion(sex, feline);
         assertEquals(expectedResult, lion.hasMane);
     }
-
 
 }
